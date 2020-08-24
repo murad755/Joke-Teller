@@ -4,7 +4,7 @@ const programmingButton = document.getElementById('programming');
 const punButton = document.getElementById('pun');
 const darkButton = document.getElementById('dark');
 const miscButton = document.getElementById('miscellaneous');
-const myKey = MY_API_KEY;
+let myKey = MY_API_KEY;
 
 let currentApiUrl = 'https://sv443.net/jokeapi/v2/joke/Any';
 
@@ -12,7 +12,7 @@ let currentApiUrl = 'https://sv443.net/jokeapi/v2/joke/Any';
 
 const toggleButton = () => {
     jokeTell.disabled = !jokeTell.disabled;
-}
+};
 
 // Pass joke to voice RSS API
 const tellMe = (joke) => {
