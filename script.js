@@ -4,7 +4,7 @@ const programmingButton = document.getElementById('programming');
 const punButton = document.getElementById('pun');
 const darkButton = document.getElementById('dark');
 const miscButton = document.getElementById('miscellaneous');
-let myKey = MY_API_KEY;
+
 
 let currentApiUrl = 'https://sv443.net/jokeapi/v2/joke/Any';
 
@@ -18,7 +18,7 @@ const toggleButton = () => {
 const tellMe = (joke) => {
     console.log(joke);
     VoiceRSS.speech({
-        key: myKey,
+        key: MY_API_KEY,
         src: joke,
         hl: 'en-us',
         v: 'Linda',
